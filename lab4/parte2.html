@@ -1,0 +1,49 @@
+<html>
+    <meta charset="utf-8">
+    <style>
+        div{
+            border: 3px solid;
+            margin: auto;
+            width: 25%;
+            padding: 10px;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+       
+        boton{
+            padding-top: 2px;
+            margin: 2px;
+        }
+    </style>
+    <head>
+    </head>
+    <body >
+        <div>
+            <form id="form">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" class="input">
+                <label for="password">Contrasena</label>
+                <input type="password" id="password" class="input">
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+    </body>
+    <script>
+        var form = document.getElementById('form')
+
+        form.addEventListener('submit',function(event){
+            event.preventDefault()
+
+            var correo = document.getElementById('correo').value
+            console.log(correo)
+            var password = document.getElementById('password').value
+            console.log(password)
+
+        })
+    </script>
+
+</html>
