@@ -1,0 +1,94 @@
+<html>
+    <meta charset="utf-8">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+        }
+        .contenedor{
+            background-color: grey;
+            width: 40vw;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            padding: 2em;
+            border-radius: 0.5em;
+            border: solid 2px black;
+            text-align: center;
+        }
+        .texto{
+            font-family: Georgia, serif; font-size:  25px;
+            
+        }
+
+
+        .wrapper{
+            
+        }
+
+       
+        .fila{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .bloque{
+            border: 2px solid black;
+            border-radius: 0.4em;
+            padding: 2px;
+            width: 2em;
+            height: 2em;
+            transform: scaleY(-1) scaleX(-1);
+            text-align: center;
+            margin: 5px;
+            font-family: Georgia, serif;
+            background-color: white;
+        }
+
+        .pintado{
+            border-color: red;
+            background-color: rgb(255, 255, 255);
+            color: red;
+        }
+    </style>
+    <head>
+       
+
+    </head>
+    <body >
+       <div class="contenedor"> 
+            <h1 class="texto">Pirámide</h1>
+            <div class="wrapper">
+                <div class ="fila fila1">
+                    <div class="bloque pintado">1</div>
+                </div>
+                
+                <div class="fila fila2">
+                    <div class="bloque pintado">1</div>
+                    <div class="bloque">1</div>
+                </div>
+                 
+                <div class="fila fila3">
+                    <div class="bloque">1</div>
+                    <div class="bloque pintado">1</div>
+                    <div class="bloque">1</div>
+                </div>
+
+                <div class="fila fila4">
+                    <div class="bloque">1</div>
+                    <div class="bloque pintado">1</div>
+                    <div class="bloque">1</div>
+                    <div class="bloque">1</div>
+                </div>
+            </div>
+        </div> 
+    </body>
+
+</html>
